@@ -2,6 +2,7 @@ package com.oops.examples;
 
 import com.oops.examples.Encapsulation.BankAccount;
 import com.oops.examples.inheritance.*;
+import com.oops.examples.polymorphism.Calculator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -96,6 +97,17 @@ public class ExamplesApplication {
 
 		System.out.println("Hybrid inheritance");
 		dogg.swim();
+
+
+		System.out.println("Polymorphism");
+		Calculator calculator = new Calculator();
+		calculator.add(1,2);
+		calculator.add(1, 2,3);
+		calculator.add(1.79769313486231,1.79769313486231);
+		calculator.add(1.79769313486231,1);
+
+
+
 	}
 
 }
