@@ -65,16 +65,37 @@ public class ExamplesApplication {
 		person.greet("Prapti");
 		student.greet("Prapti",12);
 
+		System.out.println("Single Inheritance");
 
 		Dogg dogg = new Dogg();
 		dogg.makeSound();
 
 
+		System.out.println("Multilevel Inheritance");
 
 		Cat cat = new Cat();
 		cat.eat();
 		cat.walk();
 		cat.meow();
+
+
+
+		System.out.println("Hierachical inheritance");
+		Cat cat1 = new Cat();
+		Rabbit rabbit = new Rabbit();
+
+		cat1.walk();
+		cat1.meow();
+		cat1.makeSound();
+		cat1.eat();
+
+		rabbit.walk();
+		rabbit.wofff();
+		rabbit.eat();
+		rabbit.makeSound();
+
+		System.out.println("Hybrid inheritance");
+		dogg.swim();
 	}
 
 }
