@@ -1,6 +1,7 @@
 package com.oops.examples;
 
 import com.oops.examples.Encapsulation.BankAccount;
+import com.oops.examples.abstraction.Horse;
 import com.oops.examples.inheritance.*;
 import com.oops.examples.polymorphism.Calculator;
 import org.springframework.boot.SpringApplication;
@@ -108,6 +109,19 @@ public class ExamplesApplication {
 
 
 
+		System.out.println("Abstraction");
+		Horse horse = new Horse();
+		horse.sleep();
+		horse.eat();
+
+
+
+		System.out.println("Working with singleton");
+		Logger logger1 = Logger.getInstance();
+		Logger logger2 = Logger.getInstance();
+
+		logger1.log("Singleton is working!");
+		System.out.println(logger1 == logger2); // true
 	}
 
 }
